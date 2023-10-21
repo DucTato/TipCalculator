@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:padding="16dp"
-    >
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/cost_of_service"
@@ -18,27 +17,28 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/title_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title_name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cost_of_service"/>
+        app:layout_constraintTop_toBottomOf="@id/cost_of_service" />
 
     <RadioGroup
         android:id="@+id/radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="108dp"
-        app:layout_constraintTop_toBottomOf="@id/title_question"
-        app:layout_constraintStart_toStartOf="parent"
-        android:orientation="vertical"
         android:checkedButton="@id/radioButtonOkay"
-        >
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_question"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="108dp">
 
         <RadioButton
             android:id="@+id/radioButtonAmazing"
@@ -47,6 +47,7 @@
             android:text="@string/radio_button_amazing"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="115dp" />
+
         <RadioButton
             android:id="@+id/radioButtonGood"
             android:layout_width="wrap_content"
@@ -54,6 +55,7 @@
             android:text="@string/radio_button_good"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="115dp" />
+
         <RadioButton
             android:id="@+id/radioButtonOkay"
             android:layout_width="wrap_content"
@@ -61,6 +63,7 @@
             android:text="@string/radio_button_okay"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="115dp" />
+
         <RadioButton
             android:id="@+id/radioButtonNone"
             android:layout_width="wrap_content"
@@ -81,6 +84,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/radio_group" />
+
     <Button
         android:id="@+id/calculateButton"
         android:layout_width="0dp"
@@ -90,12 +94,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/switchRoundUp" />
+
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/calculateButton"
         android:text="@string/text_result"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculateButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
