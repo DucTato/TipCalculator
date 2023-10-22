@@ -7,6 +7,6 @@
     <string name="radio_button_okay">Alright (10%)</string>
     <string name="radio_button_none">Nope (No tips)</string>
     <string name="round_up_switch_prompt">Round up tips?</string>
-    <string name="calculate_button">Calculate cost</string>
-    <string name="text_result">Tip amount</string>
+    <string name="calculate_button">Calculate tip</string>
+    <string name="text_result">Tip amount: %s</string>
 </resources>
